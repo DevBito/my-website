@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV template</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+  </head>
+  <body>   
+    <section>
+      <!-- MOBILE NAVIGATION -->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none">CURRICULO</a>
+        <a href="#portifolio" class="w3-bar-item w3-button w3-hover-none">PORTIFOLIO</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+      </div>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#about" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">SOBRE</a>
+        <a href="#resume" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">RESUMO</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">CONTATO</a>
+      </div>
+
+      <!-- SOCIAL SECTION -->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!--IMAGE/AVATAR-->
+        <img src="avatar.jpg" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
+        <!--SCIAL NETWORK BUTTONS-->
+        <div class="links w3-margin-top w3-padding-small">
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://github.com/DevBito" target="_blank">
+              <i data-feather="github"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://wa.me/5511949591444" target="_blank">
+             <i data-feather="phone"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.dio.me/users/gabrielgc765" target="_blank">
+             <i data-feather="book-open"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.linkedin.com/in/gabriel-a837921a3/" target="_blank">
+             <i data-feather="linkedin"></i>
+          </a>
+        </div>
+        <!--CV DOWNLOAD BUTTON-->
+        <div class="w3-container w3-padding-16">
+          <a href="./resume.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="resume.pdf">
+            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+            <span class="w3-margin-left download-text">BAIXAR CURRICULO</span>
+          </a>
+        </div>
+      </section>
+
+      <!--CV CONTENT SECTION-->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">CURRICULO</a>
+          <a href="#portifolio" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">PORTIFOLIO</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTATO</a>
+          <a href="#resume" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">RESUMO</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">SOBRE</a>
+        </div>
+        <div class="content-container w3-margin-top-2">
+          <!--HOME SECTION-->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            <p style="font-style: italic; font-size:x-large;">"A técnologia é a arte de criar o impossivel e torná-lo realidade"</p>
+            <h1>GABRIEL (22)</h2>
+            <h2>Em busca de estagio com Desenvolvimento em Python</h3>
+            <p></p>
+          </div>
+
+          <!--ABOUT SECTION-->
+          <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">SOBRE MIM</h2>
+            <p class="w3-margin-top-2"> 
+                Sou um profissional apaixonado por tecnologia e inovação, com
+                experiência em desenvolvimento de software, inteligência artificial e
+                engenharia de prompt. Com uma abordagem prática e orientada a
+                resultados, desenvolvo soluções customizadas que aliam eficiência
+                técnica e impacto estratégico.                
+            </p>
+            <p class=""> 
+                Minha trajetória inclui projetos relevantes como o Prospectify
+                AI, uma ferramenta baseada em IA para otimização de buscas
+                empresariais, além de experiências em gestão logística no
+                setor hospitalar e desenvolvimento de sistemas acadêmicos
+                colaborativos.
+            </p>
+            <p class=""> 
+                Tenho habilidades em linguagens como Python, SQL e C#, além
+                de certificações como AI-900 (Fundamentos de IA no Azure). Meu
+                estilo de trabalho combina estabilidade e flexibilidade, valorizando
+                ambientes colaborativos e bem estruturados.                
+            </p>
+            <p class=""> 
+                Busco sempre transformar desafios em soluções práticas e
+                inovadoras, contribuindo para o crescimento de pessoas e
+                organizações.               
+            </p>
+          </div>
+
+          <!--RESUME-->
+          <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUMO</h2>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <!--EMPLOYMENT HISTORY SECTION-->
+              <h3 class="w3-border-amber">EXPERIÊNCIA PROFISSIONAL</h3>
+              <div class="timeline-container">
+                <!-- Linha Vertical -->
+                <div class="timeline-line"></div>
+              <div class="timeline-item">
+                <h4>Freelancer</h4>
+                <p>Dezembro de 2024 - Atualmente</p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                    <li>Desenvolvimento e entrega de soluções sob medida em software para diferentes clientes e projetos.</li>
+                    <li>Colaboração com equipes multidisciplinares para planejamento e implementação de sistemas eficazes.</li>
+                    <li>Implementação de funcionalidades em linguagens como Python, SQL e C#, com foco em eficiência e usabilidade.</li>
+                    <li>Suporte a desenvolvimento de sites, projetos de engenharia de prompts e integração com inteligência artificial.</li>
+                </ul>
+              </div>
+              <div class="timeline-item">
+                <h4>Auxiliar de Farmácia - Instituto de Responsabilidade Social Sirio Libanês</h4>
+                <p>Janeio de 2022 - Dezembro de 2024 </p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Responsável por auxiliar na gestão de medicamentos e suprimentos no Centro de Distribuição Hospitalar através do MVSoul e GTPlan.                 </li>
+                  <li>Atuando na recepção, armazenamento , unitarização de medicamentos, controle de estoque e distribuição de medicamentos para as demais farmácias satélites. Além disso, periodicamente realizando contagens e validades.</li>
+                </ul>
+              </div>
+              <div class="timeline-item">
+                <h4>Aprendiz de Auxiliar de Almoxarifado - Instituto de Responsabilidade Social Sirio Libanês</h4>
+                <p>Março de 2021 - Dezembro de 2022 </p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Controle de estoque e validade de insumos hospitalares, atualização de indicadores, recebimento de medicamentos e materiais, separação e envio de materiais para outros setores.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!---EDUCATION SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">FORMAÇÃO ACADÊMICA</h3>
+                <h4>Senac SP, Analise e desenvolvimento de Sistemas</h4>
+                <p>Fevereiro de 2023 - Dezembro de 2025 </p>
+            </div>
+
+<!--SKILLS SECTION-->
+<div class="w3-container w3-margin-top-2 w3-cursive">
+    <h3 class="w3-border-amber">MINHAS HABILIDADES</h3>
+    <!--SOFT SKILLS-->
+    <h4>Habilidades Interpessoais</h4>
+    <ul class="w3-ul" style="font-weight: 500; list-style-type: disc; padding-left: 20px;">
+      <li>Inglês <strong>pré-intermediario.</strong></li>
+      <li>Possuo excelentes habilidades de <b>resolução de problemas</b> e sou capaz de lidar com <b>desafios complexos</b> de forma independente.</li>
+      <li>Excelência em <b>ambientes colaborativos</b>, valorizando a <b>comunicação aberta</b> e contribuindo ativamente para o <b>sucesso da equipe</b>.</li>
+      <li>Adapto-me rapidamente, aprendendo e integrando <b>novas ferramentas</b> e <b>tecnologias</b> para melhorar a <b>eficiência</b>.</li>
+      <li>Sou <b>proativo</b> e motivado para <b>aprender continuamente</b>, buscando <b>soluções inovadoras</b> para desafios técnicos e organizacionais.</li>
+    </ul>
+    <!--TECHNICAL SKILLS-->
+    <h4>Habilidades Técnicas</h4>
+    <ul class="w3-ul" style="font-weight: 500; list-style-type: disc; padding-left: 20px;">
+      <li>Proficiente em linguagens de programação como <b>Python</b>, <b>SQL</b> e <b>C#</b>.</li>
+      <li>Experiência no desenvolvimento de <b>aplicativos com IA</b>, incluindo ferramentas como o <b>Prospectify AI</b>.</li>
+      <li>Habilidade em <b>desenvolvimento de software</b> com foco em <b>back-end</b> e <b>engenharia de prompt</b>.</li>
+      <li>Conhecimento em <b>implementação</b> e <b>integração de APIs</b>, incluindo APIs para <b>Modelos de Linguagem de Grande Escala (LLMs)</b>.</li>
+      <li>Competência em <b>gerenciamento de bancos de dados</b> e <b>análise de dados</b> para <b>otimização de processos</b>.</li>
+      <li>Familiaridade com <b>algoritmos de otimização</b> e métodos <b>heurísticos</b> para aplicações práticas.</li>
+      <li>Proficiência em ferramentas como <b>Microsoft Excel</b> (<b>certificações intermediária</b> e <b>básica</b>).</li>
+      <li>Experiência em <b>redação técnica</b> e criação de <b>documentação</b> para projetos de <b>software</b> e <b>IA</b>.</li>
+    </ul>
+  </div>
+  
+            <!--INTERESTS SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MEUS HOBBIES E INTERESSES</h3>
+                <ul class="w3-ul" style="font-weight: 500; list-style-type: disc; padding-left: 20px;">
+                  <li>No meu tempo livre, gosto de jogar xadrez e jogos de estratégia, que estimulam meu raciocínio lógico</li>
+                  <li>Gosto de cozinhar</li>
+                  <li>Atualmente estou estudando <strong>mandarim</strong></li>
+                  <li>Gosto de mestrar sessões de RPG de Mesa</li>
+                </ul>
+            </div>
+
+          <!--CONTACT SECTION-->
+          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">CONTATOS E MAIS SOBRE MIM</h3>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+              <p>Nome: Gabriel Gomes Cavalcanti</p>
+              <p>Endereço: São Paulo, SP</p>
+              <p>Número de Telefone: +55 (11) 949591444</p>
+            <p>E-mail: <a href="mailto:gabrielgc765+vagas@gmail.com">clique aqui</a></p>
+            </div>
+          </div>
+
+<!-- PORTIFOLIO SECTION -->
+<div id="portifolio" class="w3-container w3-margin-top-20-percent w3-cursive">
+    <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">PORTIFÓLIO</h2>
+    <div class="w3-margin-top-2" style="font-weight: 500;">
+      <!-- Portfólio Grid -->
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="project1.png" alt="Projeto 1" alt="Descrição da imagem" class="responsive-image">
+          <div class="portfolio-caption">
+            <h4>Prospectify AI - Em desenvolvimento</h4>
+            <p>O Prospectify AI é uma ferramenta de inteligência artificial focada em otimizar a busca e coleta de dados empresariais com base em inputs personalizados. Ele automatiza o processo de prospecção, garantindo informações precisas e relevantes para análise de mercado e tomada de decisões estratégicas.</p>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        <!--FOOTER-->
+        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+          <p>© 2025 - Gabriel G Cavalcanti</p>
+        <!-- End footer -->
+        </footer>
+
+        <!--END OF CV SECTION-->
+      </section>      
+    </section>
+    <script>
+      // Function to toggle mobile navigation
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+          nav.classList.remove('w3-show');
+        } else { 
+          nav.classList.add('w3-show');
+        }
+      }
+    </script>
+    <script>
+      // Script to load feather icons
+      feather.replace()
+    </script>
+  </body>
+</html>
